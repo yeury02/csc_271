@@ -22,23 +22,17 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
+    width: 20%;
+    height: 20%;
     float: right;
     margin: 10px;
 }
-ul {
-    display: table; 
-    margin: 0 auto;
-    text-align: left;
-}
 
-li, p {
+p {
     color: black;
     font-size: x-large;
     font-family: 'Chilanka', cursive;
 }
-
-
 
 .most-inner-list {
     text-align: left;
