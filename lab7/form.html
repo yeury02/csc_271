@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
     <title>Soccer Facts</title>
 </head>
 <body>
@@ -23,3 +23,47 @@
             </nav>
         </div> 
     </header> 
+
+    <div class="container-all">
+        <div id="title">
+            <h2> Soccer Form </h2>
+        </div>
+
+        <form>
+            <p>Are you a Soccer Fan? </p>
+            <input type="radio" id="soccer-fan" name="Yes" value="Yes">
+            <label for="soccer-fan">YES</label>
+            <input type="radio" id="not-soccer-fan" name="No" value="No">
+            <label for="not-soccer-fan">NO</label>
+
+            <p>Have you previously played soccer in the past</p>
+            <input type="radio" id="played" name="Yes" value="Yes">
+            <label for="played">YES</label>
+            <input type="radio" id="not-played" name="No" value="No">
+            <label for="not-played">NO</label><br><br>
+
+            <label for="teams">Choose your favorite team: </label>
+            <select name="teams" id="teams">
+                <option value="">--Please choose an option--</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Real Madrid">Real Madrid</option>
+                <option value="Atletico Madrid">Atletico Madrid</option>
+                <option value="Juventus">Juventus</option>
+                <option value="PSG">PSG</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Bayern Munich">Bayern Munich</option>
+                <option value="Not Listed">Not Listed</option>
+            </select><br><br>
+
+            <label for="fplayer">Favorite Player:</label>
+            <input type="text" id="fplayer" name="fplayer" placeholder="Ex: Messi, Ronaldo"><br><br>
+            <label for="fposition">Favorite Position:</label>
+            <input type="text" id="fposition" name="fposition" placeholder="Ex: Goalie, Striker"><br><br>
+            <input type="submit" value="Submit">
+
+            
+
+
+
+        </form>
+
