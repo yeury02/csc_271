@@ -34,6 +34,12 @@ form {
     text-align: center;
 }
 
+label.text-box {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+ }
+
 input[type=text], select {
     width: 50%;
     padding: 12px 20px;
@@ -57,7 +63,7 @@ cursor: pointer;
 
 input[type=submit]:hover {
     background-color: rgb(42, 176, 221);
-  }
+}
 
 .most-inner-list {
     text-align: left;
