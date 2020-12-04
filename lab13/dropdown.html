@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <title>DropDown</title>
+</head>
+<body>
+    
+    <img class="banner" src="img/banner.jpg" alt="soccer-banner">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="soccer-logo">
+            </div>
+            <!-- This makes a nav bar with un-ordered lists -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="rules.html">Rules</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="external.html">External-Sites</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="rules.html">Rules</a>
+                          <a href="history.html">History</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div> 
+    </header> 
+
+</body>
+</html>
