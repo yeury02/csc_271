@@ -41,7 +41,7 @@
 
     <div class="container-all">
         <div id="title">
-            <h2> Soccer Form </h2>
+            <h2 onmouseover="titleChange()"> Soccer Form </h2>
         </div>
 
         <form id="form" action="MAILTO:yeury02@uri.edu" method="POST" enctype="text/plain">
@@ -79,6 +79,9 @@
             <label class="text-box" for="email">Enter your email (optional):</label>
             <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
 
-            <input type="submit" value="Email Form">
+            <input type="submit" value="Email Form" onclick="formValidation()">
         </form>
-
+    </div>
+    <script src="js/form.js"></script>
+</body>
+</html>
