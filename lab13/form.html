@@ -44,7 +44,7 @@
             <h2 onmouseover="titleChange()"> Soccer Form </h2>
         </div>
 
-        <form id="form" action="MAILTO:yeury02@uri.edu" method="POST" enctype="text/plain">
+        <form name="myForm" id="form" action="MAILTO:yeury02@uri.edu" method="POST" enctype="text/plain">
 
             <p>Are you a Soccer Fan? </p>
             <input type="radio" id="soccer-fan" name="fan" value="Yes" required>
@@ -79,7 +79,7 @@
             <label class="text-box" for="email">Enter your email (optional):</label>
             <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
 
-            <input type="submit" value="Email Form" onclick="formValidation()">
+            <input type="submit" value="Email Form" onclick="validateForm()">
         </form>
     </div>
     <script src="js/form.js"></script>

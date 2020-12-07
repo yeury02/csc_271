@@ -8,7 +8,17 @@ function titleChange() {
     }
 }
 
-
-function formValidation () {
-    alert("HERE")
+function validateForm() {
+    var fields = ["fan" , "played", "teams", "player", "position", "email"];
+    var i, l = fields.length;
+    var fieldname;
+    for (i = 0; i < l; i++) {
+        fieldname = fields[i];
+        console.log("fieldname");
+        if (document.forms["myForm"][fieldname].value === "") {
+        alert(fieldname + " can not be empty");
+        return false;
+        }
+    }
+    return true;
 }
