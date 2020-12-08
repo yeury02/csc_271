@@ -14,10 +14,10 @@ function validateForm() {
     var fieldname;
     for (i = 0; i < l; i++) {
         fieldname = fields[i];
-        console.log("fieldname");
         if (document.forms["myForm"][fieldname].value === "") {
-        alert(fieldname + " can not be empty");
-        return false;
+            document.forms["myForm"][fieldname].style.border = "5px solid red";
+            alert(fieldname + " can not be empty");
+            return false;
         }
     }
     return true;
