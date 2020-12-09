@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <title>Soccer Facts</title>
+</head>
+<body>
+    <img class="banner" src="img/banner.jpg" alt="soccer-banner">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="soccer-logo">
+            </div>
+            <!-- This makes a nav bar with un-ordered lists -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="rules.html">Rules</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="external.html">External-Sites</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="rules.html">Rules</a>
+                          <a href="history.html">History</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div> 
+    </header> 
+
+    <div class="container-all">
+        <div id="title">
+            <h2 onmouseover="titleChange()"> Soccer Form </h2>
+        </div>
+
+        <form name="myForm" id="form" action="MAILTO:yeury02@uri.edu" method="POST" enctype="text/plain">
+
+            <p>Are you a Soccer Fan? </p>
+            <input type="radio" id="soccer-fan" name="fan" value="Yes" required>
+            <label for="soccer-fan">YES</label>
+            <input type="radio" id="not-soccer-fan" name="fan" value="No" required>
+            <label for="not-soccer-fan">NO</label>
+
+            <p>Have you previously played soccer in the past</p>
+            <input type="radio" id="played" name="played" value="Yes" required>
+            <label for="played">YES</label>
+            <input type="radio" id="not-played" name="played" value="No" required>
+            <label for="not-played">NO</label><br><br>
+
+            <label class="text-box" for="teams">Choose your favorite team: </label>
+            <select name="teams" id="teams" required>
+                <option value="">--Please choose an option--</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Real Madrid">Real Madrid</option>
+                <option value="Atletico Madrid">Atletico Madrid</option>
+                <option value="Juventus">Juventus</option>
+                <option value="PSG">PSG</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Bayern Munich">Bayern Munich</option>
+                <option value="Not Listed">Not Listed</option>
+            </select><br><br>
+
+            <label class="text-box" for="fplayer">Favorite Player:</label>
+            <input type="text" id="fplayer" name="player" placeholder="Ex: Messi, Ronaldo" required><br><br>
+            <label class="text-box" for="fposition">Favorite Position:</label>
+            <input type="text" id="fposition" name="position" placeholder="Ex: Goalie, Striker" required><br><br>
+            
+            <label class="text-box" for="email">Enter your email (optional):</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
+
+            <input type="submit" value="Email Form" onclick="validateForm()">
+        </form>
+    </div>
+    <script src="js/form.js"></script>
+</body>
+</html>
