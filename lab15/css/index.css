@@ -10,8 +10,14 @@
     background: pink;
 }
 
-.nav-bar {
-    margin-right: 60px;
+.navbar-nav > li {
+    margin-left:17px;
+    margin-right:17px;
+}
+
+#nav-barNav {
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .jumbotron {
